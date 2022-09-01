@@ -4,4 +4,5 @@ export interface CardInterface {
   taskType1?: string;
   taskType2?: string;
   taskType3?: string;
+  type?: string;
 }

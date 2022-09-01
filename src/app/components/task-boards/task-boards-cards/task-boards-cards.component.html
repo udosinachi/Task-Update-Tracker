@@ -4,7 +4,7 @@
     <span matBadge="4"></span>
   </div>
   <div class="task-boards-cards-sub" *ngFor="let oneCard of forCard">
-    <div class="card-holder">
+    <div class="card-holder" *ngIf="oneCard.type === cardRowHeader">
       <div class="card-title">
         <span class="h3">{{ oneCard.cardTitle }}</span>
         <span class="card-title-sub">
@@ -15,7 +15,7 @@
       <div class="task-type">
         <div class="task-type-1">#U100{{ oneCard.taskType1 }}</div>
         <div class="task-type-2">{{ oneCard.taskType2 }}</div>
-        <div class="task-type-3">{{ oneCard.taskType3 }}</div>
+        <div class="task-type-3">{{ cardRowHeader }}</div>
       </div>
       <div class="last-section">
         <div>

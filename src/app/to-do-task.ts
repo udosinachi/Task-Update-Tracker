@@ -1,11 +1,11 @@
-export const CardDetails = [
+export const ToDoTask = [
   {
     id: 1,
     cardTitle: 'Model Answer',
     taskType1: '1',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'Backlog Task',
+    type: 'to-do',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const CardDetails = [
     taskType1: '2',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'To Do Task',
+    type: 'to-do',
   },
   {
     id: 3,
@@ -21,30 +21,14 @@ export const CardDetails = [
     taskType1: '3',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'In Progess',
+    type: 'to-do',
   },
   {
     id: 4,
     cardTitle: 'Product Design',
-    taskType1: '4',
+    taskType1: '3',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'Done',
-  },
-  {
-    id: 5,
-    cardTitle: 'Product Design',
-    taskType1: '5',
-    taskType2: 'Project',
-    taskType3: 'Backlog',
-    type: 'Done',
-  },
-  {
-    id: 6,
-    cardTitle: 'Product Design',
-    taskType1: '6',
-    taskType2: 'Project',
-    taskType3: 'Backlog',
-    type: 'To Do Task',
+    type: 'to-do',
   },
 ];

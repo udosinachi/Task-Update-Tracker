@@ -1,0 +1,20 @@
+.task-board-header-main {
+  display: flex;
+  justify-content: space-between;
+  /* border: 3px solid red; */
+  width: 70%;
+  align-items: center;
+  margin-top: 25px;
+}
+.task-board-header-main h2 {
+  font-size: 35px;
+}
+.task-board-header-main-lists span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.active-span {
+  color: blue;
+  font-weight: 500;
+  border-bottom: 2px solid blue;
+}

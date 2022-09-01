@@ -1,0 +1,93 @@
+.task-boards-cards-main {
+  /* border: 3px solid red; */
+  margin-top: 30px;
+  width: 300px;
+  margin-right: 15px;
+}
+img {
+  width: 25px;
+  height: 25px;
+}
+.task-boards-cards-main-title {
+  /* border: 3px solid orange; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.task-boards-cards-main-title span {
+  margin-top: -5px;
+}
+.card-holder {
+  /* border: 2px solid black; */
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  background: white;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.h3 {
+  font-weight: 600;
+  font-size: small;
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  /* border: 3px solid red; */
+  align-items: center;
+  margin-bottom: 20px;
+}
+.card-title-sub {
+  /* border: 3px solid green; */
+  display: flex;
+}
+.task-icons {
+  font-size: 17px;
+  margin-top: 2px;
+}
+.task-type {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: flex-start;
+}
+.task-type-2 {
+  color: blue;
+  background-color: cornflowerblue;
+}
+.task-type-3 {
+  color: yellowgreen;
+  background-color: palegoldenrod;
+}
+.task-type div {
+  /* background-color: green; */
+  border-radius: 7px;
+  margin: 0;
+  margin-left: 7px;
+  padding: 0 4px;
+  font-size: 12px;
+  border: 1px solid black;
+  font-weight: 500;
+}
+.last-section {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.last-section-icons {
+  /* border: 3px solid green; */
+  display: flex;
+  justify-content: center;
+}
+.last-section-icons span {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.mat-icon {
+  font-size: 17px;
+}

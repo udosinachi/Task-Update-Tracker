@@ -1,0 +1,36 @@
+<div class="task-boards-cards-main">
+  <div class="task-boards-cards-main-title">
+    <h2>{{ cardRowHeader }}</h2>
+    <span matBadge="4"></span>
+  </div>
+  <div class="task-boards-cards-sub" *ngFor="let oneCard of forCard">
+    <div class="card-holder">
+      <div class="card-title">
+        <span class="h3">{{ oneCard.cardTitle }}</span>
+        <span class="card-title-sub">
+          <mat-icon class="task-icons"> tasks </mat-icon>
+          <span>4</span>
+        </span>
+      </div>
+      <div class="task-type">
+        <div class="task-type-1">#U100{{ oneCard.taskType1 }}</div>
+        <div class="task-type-2">{{ oneCard.taskType2 }}</div>
+        <div class="task-type-3">{{ oneCard.taskType3 }}</div>
+      </div>
+      <div class="last-section">
+        <div>
+          <img src="../../../assets/user-image.png" alt="Assigned-Persons" />
+          <img src="../../../assets/user-image.png" alt="Assigned-Persons" />
+          <img src="../../../assets/user-image.png" alt="Assigned-Persons" />
+          <i class="material-icons">add_circle_outline</i>
+        </div>
+        <div class="last-section-icons">
+          <mat-icon class="mat-icon"> attach_file </mat-icon>
+          <span> 2 </span>
+          <mat-icon class="mat-icon"> comment </mat-icon>
+          <span>5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

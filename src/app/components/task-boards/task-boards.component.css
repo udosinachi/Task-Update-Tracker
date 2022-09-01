@@ -1,0 +1,22 @@
+.task-boards-main {
+  width: 97%;
+  margin: auto;
+  /* background-color: whitesmoke; */
+  /* padding: 10px; */
+  /* border: 3px solid pink; */
+}
+/* .cards {
+  border: 3px solid blue;
+} */
+.cards-sub {
+  display: flex;
+  justify-content: flex-start;
+  /* border: 3px solid green; */
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cards-sub::-webkit-scrollbar {
+  display: none;
+}

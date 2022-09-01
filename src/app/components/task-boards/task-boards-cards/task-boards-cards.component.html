@@ -8,8 +8,18 @@
       <div class="card-title">
         <span class="h3">{{ oneCard.cardTitle }}</span>
         <span class="card-title-sub">
-          <mat-icon class="task-icons"> tasks </mat-icon>
-          <span>4</span>
+          <!-- <mat-icon class="task-icons"> more_vert </mat-icon> -->
+          <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon class="task-icons"> more_vert </mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="onBackLogTask()">
+              Backlog Task
+            </button>
+            <button mat-menu-item (click)="onToDoTask()">To Do Task</button>
+            <button mat-menu-item (click)="onInProgess()">In Progess</button>
+            <button mat-menu-item (click)="onDone()">Done</button>
+          </mat-menu>
         </span>
       </div>
       <div class="task-type">

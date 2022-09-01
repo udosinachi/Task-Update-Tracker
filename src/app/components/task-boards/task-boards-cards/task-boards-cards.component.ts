@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { CardDetails } from '../../../card-details';
 import { CardInterface } from '../../../card-interface';
 
@@ -14,4 +14,37 @@ export class TaskBoardsCardsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onBackLogTask() {
+    for (let i in this.forCard) {
+      if (this.forCard[i].type == this.cardRowHeader) {
+        this.forCard[i].type = 'Backlog Task';
+        break;
+      }
+    }
+  }
+  onToDoTask() {
+    for (let i in this.forCard) {
+      if (this.forCard[i].type == this.cardRowHeader) {
+        this.forCard[i].type = 'To Do Task';
+        break;
+      }
+    }
+  }
+  onInProgess() {
+    for (let i in this.forCard) {
+      if (this.forCard[i].type == this.cardRowHeader) {
+        this.forCard[i].type = 'In Progess';
+        break;
+      }
+    }
+  }
+  onDone() {
+    for (let i in this.forCard) {
+      if (this.forCard[i].type == this.cardRowHeader) {
+        this.forCard[i].type = 'Done';
+        break;
+      }
+    }
+  }
 }

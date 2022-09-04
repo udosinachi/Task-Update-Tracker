@@ -16,7 +16,13 @@
   }
 }
 .task-board-header-main h2 {
-  font-size: 35px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+@media (max-width: 640px) {
+  .task-board-header-main-lists {
+    display: none;
+  }
 }
 .task-board-header-main-lists span {
   margin-left: 15px;

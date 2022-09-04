@@ -11,7 +11,7 @@ export const DASHBOARD_LIST: DashboardList[] = [
     id: 2,
     icons: 'drive_file_move',
     text: 'Drive Files',
-    badge: 435,
+    badge: 43,
   },
   {
     id: 3,

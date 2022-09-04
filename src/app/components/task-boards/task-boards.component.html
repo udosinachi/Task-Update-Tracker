@@ -3,24 +3,208 @@
   <div class="cards">
     <div class="cards-sub">
       <div>
-        <app-task-boards-cards
-          [cardRowHeader]="cardSectionTitle1"
-        ></app-task-boards-cards>
+        <div
+          class="task-boards-cards-main"
+          cdkDropList
+          #backlogList="cdkDropList"
+          [cdkDropListData]="task1"
+          [cdkDropListConnectedTo]="[toDoList, inProcessList]"
+          (cdkDropListDropped)="drop($event)"
+        >
+          <div class="task-boards-cards-main-title">
+            <h2>Backlog Task</h2>
+            <span matBadge="{{ task1.length }}"> </span>
+          </div>
+          <div class="task-boards-cards-sub">
+            <div class="card-holder" *ngFor="let card of task1" cdkDrag>
+              <div class="card-title">
+                <span class="h3">{{ card.cardTitle }}</span>
+                <span class="card-title-sub"> </span>
+              </div>
+              <div class="task-type">
+                <div class="task-type-1">#U100{{ card.taskType1 }}</div>
+                <div class="task-type-2">{{ card.taskType2 }}</div>
+                <div class="task-type-3">{{ card.type }}</div>
+              </div>
+              <div class="last-section">
+                <div>
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <i class="material-icons">add_circle_outline</i>
+                </div>
+                <div class="last-section-icons">
+                  <mat-icon class="mat-icon"> attach_file </mat-icon>
+                  <span> 2 </span>
+                  <mat-icon class="mat-icon"> comment </mat-icon>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
-        <app-task-boards-cards
-          [cardRowHeader]="cardSectionTitle2"
-        ></app-task-boards-cards>
+        <div
+          class="task-boards-cards-main"
+          cdkDropList
+          #toDoList="cdkDropList"
+          [cdkDropListData]="task2"
+          [cdkDropListConnectedTo]="[backlogList, inProcessList, doneList]"
+          (cdkDropListDropped)="drop($event)"
+        >
+          <div class="task-boards-cards-main-title">
+            <h2>To Do Task</h2>
+            <span matBadge="{{ task2.length }}"></span>
+          </div>
+          <div class="task-boards-cards-sub">
+            <div class="card-holder" *ngFor="let card of task2" cdkDrag>
+              <div class="card-title">
+                <span class="h3">{{ card.cardTitle }}</span>
+                <span class="card-title-sub"> </span>
+              </div>
+              <div class="task-type">
+                <div class="task-type-1">#U100{{ card.taskType1 }}</div>
+                <div class="task-type-2">{{ card.taskType2 }}</div>
+                <div class="task-type-3">{{ card.type }}</div>
+              </div>
+              <div class="last-section">
+                <div>
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <i class="material-icons">add_circle_outline</i>
+                </div>
+                <div class="last-section-icons">
+                  <mat-icon class="mat-icon"> attach_file </mat-icon>
+                  <span> 2 </span>
+                  <mat-icon class="mat-icon"> comment </mat-icon>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
-        <app-task-boards-cards
-          [cardRowHeader]="cardSectionTitle3"
-        ></app-task-boards-cards>
+        <div
+          class="task-boards-cards-main"
+          cdkDropList
+          #inProcessList="cdkDropList"
+          [cdkDropListData]="task3"
+          [cdkDropListConnectedTo]="[toDoList, backlogList, doneList]"
+          (cdkDropListDropped)="drop($event)"
+        >
+          <div class="task-boards-cards-main-title">
+            <h2>In Process</h2>
+            <span matBadge="{{ task3.length }}"></span>
+          </div>
+          <div class="task-boards-cards-sub">
+            <div class="card-holder" *ngFor="let card of task3" cdkDrag>
+              <div class="card-title">
+                <span class="h3">{{ card.cardTitle }}</span>
+                <span class="card-title-sub"> </span>
+              </div>
+              <div class="task-type">
+                <div class="task-type-1">#U100{{ card.taskType1 }}</div>
+                <div class="task-type-2">{{ card.taskType2 }}</div>
+                <div class="task-type-3">{{ card.type }}</div>
+              </div>
+              <div class="last-section">
+                <div>
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <i class="material-icons">add_circle_outline</i>
+                </div>
+                <div class="last-section-icons">
+                  <mat-icon class="mat-icon"> attach_file </mat-icon>
+                  <span> 2 </span>
+                  <mat-icon class="mat-icon"> comment </mat-icon>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
-        <app-task-boards-cards
-          [cardRowHeader]="cardSectionTitle4"
-        ></app-task-boards-cards>
+        <div
+          class="task-boards-cards-main"
+          cdkDropList
+          #doneList="cdkDropList"
+          [cdkDropListData]="task4"
+          [cdkDropListConnectedTo]="[toDoList, backlogList, inProcessList]"
+          (cdkDropListDropped)="drop($event)"
+        >
+          <div class="task-boards-cards-main-title">
+            <h2>Done</h2>
+            <span matBadge="{{ task4.length }}"></span>
+          </div>
+          <div class="task-boards-cards-sub">
+            <div class="card-holder" *ngFor="let card of task4" cdkDrag>
+              <div class="card-title">
+                <span class="h3">{{ card.cardTitle }}</span>
+                <span class="card-title-sub"> </span>
+              </div>
+              <div class="task-type">
+                <div class="task-type-1">#U100{{ card.taskType1 }}</div>
+                <div class="task-type-2">{{ card.taskType2 }}</div>
+                <div class="task-type-3">{{ card.type }}</div>
+              </div>
+              <div class="last-section">
+                <div>
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <img
+                    src="../../../assets/user-image.png"
+                    alt="Assigned-Persons"
+                  />
+                  <i class="material-icons">add_circle_outline</i>
+                </div>
+                <div class="last-section-icons">
+                  <mat-icon class="mat-icon"> attach_file </mat-icon>
+                  <span> 2 </span>
+                  <mat-icon class="mat-icon"> comment </mat-icon>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -21,7 +21,7 @@ export const CardDetails = [
     taskType1: '3',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'In Progess',
+    type: 'In Process',
   },
   {
     id: 4,

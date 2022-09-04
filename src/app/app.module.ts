@@ -10,6 +10,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatMenuModule } from '@angular/material/menu';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -43,6 +44,7 @@ import { TaskBoardsCardsComponent } from './components/task-boards/task-boards-c
     MatTabsModule,
     MatChipsModule,
     MatMenuModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

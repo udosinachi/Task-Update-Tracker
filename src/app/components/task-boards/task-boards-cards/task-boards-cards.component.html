@@ -1,14 +1,20 @@
-<div class="task-boards-cards-main">
+<!-- <div class="task-boards-cards-main">
   <div class="task-boards-cards-main-title">
     <h2>{{ cardRowHeader }}</h2>
     <span matBadge="4"></span>
   </div>
-  <div class="task-boards-cards-sub" *ngFor="let oneCard of forCard">
-    <div class="card-holder" *ngIf="oneCard.type === cardRowHeader">
+  <div
+    class="task-boards-cards-sub"
+    *ngFor="let oneCard of forCard"
+    [id]="oneCard.cardTitle"
+    cdkDropList
+    (cdkDropListDropped)="drop($event, oneCard.id)"
+  >
+    <div class="card-holder" *ngIf="oneCard.type === cardRowHeader" cdkDrag>
       <div class="card-title">
         <span class="h3">{{ oneCard.cardTitle }}</span>
         <span class="card-title-sub">
-          <!-- <mat-icon class="task-icons"> more_vert </mat-icon> -->
+     
           <button mat-button [matMenuTriggerFor]="menu">
             <mat-icon class="task-icons"> more_vert </mat-icon>
           </button>
@@ -43,4 +49,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

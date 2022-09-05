@@ -5,7 +5,7 @@ export const InProcessTask = [
     taskType1: '1',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'to-do',
+    type: 'Process',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const InProcessTask = [
     taskType1: '2',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'to-do',
+    type: 'Process',
   },
   {
     id: 3,
@@ -21,6 +21,6 @@ export const InProcessTask = [
     taskType1: '3',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'to-do',
+    type: 'Process',
   },
 ];

@@ -5,6 +5,6 @@ export const DoneTask = [
     taskType1: '1',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'to-do',
+    type: 'Done',
   },
 ];

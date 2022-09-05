@@ -5,7 +5,7 @@ export const ToDoTask = [
     taskType1: '1',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'to-do',
+    type: 'To-do',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const ToDoTask = [
     taskType1: '2',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'to-do',
+    type: 'To-do',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const ToDoTask = [
     taskType1: '3',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'to-do',
+    type: 'To-do',
   },
   {
     id: 4,
@@ -29,6 +29,6 @@ export const ToDoTask = [
     taskType1: '3',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'to-do',
+    type: 'To-do',
   },
 ];

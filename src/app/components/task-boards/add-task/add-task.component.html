@@ -1,0 +1,16 @@
+<div>
+  <button mat-raised-button color="primary" (click)="onClick()">Add</button>
+  <form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label for="text">Task</label>
+      <input
+        type="text"
+        name="cardTitle"
+        [(ngModel)]="cardTitle"
+        id="cardTitle"
+        placeholder="Task Title"
+      />
+    </div>
+    <button mat-raised-button color="accent" type="submit">Save Task</button>
+  </form>
+</div>

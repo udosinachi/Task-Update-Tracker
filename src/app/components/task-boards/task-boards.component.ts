@@ -8,6 +8,7 @@ import { ToDoTask } from '../../to-do-task';
 import { CardDetails } from '../../card-details';
 import { InProcessTask } from '../../in-process.task';
 import { DoneTask } from '../../done-task';
+import { CardInterface } from 'src/app/card-interface';
 
 @Component({
   selector: 'app-task-boards',
@@ -39,4 +40,8 @@ export class TaskBoardsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  addTask(task: any) {
+    this.task1.unshift(task);
+  }
 }

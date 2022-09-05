@@ -5,7 +5,7 @@ export const CardDetails = [
     taskType1: '1',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'Backlog Task',
+    type: 'Backlog',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const CardDetails = [
     taskType1: '2',
     taskType2: 'Development',
     taskType3: 'Backlog',
-    type: 'To Do Task',
+    type: 'Backlog',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const CardDetails = [
     taskType1: '3',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'In Process',
+    type: 'Backlog ',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const CardDetails = [
     taskType1: '4',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'Done',
+    type: 'Backlog',
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const CardDetails = [
     taskType1: '5',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'Done',
+    type: 'Backlog',
   },
   {
     id: 6,
@@ -45,6 +45,6 @@ export const CardDetails = [
     taskType1: '6',
     taskType2: 'Project',
     taskType3: 'Backlog',
-    type: 'To Do Task',
+    type: 'Backlog',
   },
 ];

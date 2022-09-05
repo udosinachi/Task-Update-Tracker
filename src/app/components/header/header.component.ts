@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,13 @@ export class HeaderComponent implements OnInit {
   opened: boolean = true;
   constructor() {}
 
-  ngOnInit(): void {}
+  mobileMedia: any = window.matchMedia('(max-width: 500px)');
+
+  ngOnInit(): void {
+    if (this.mobileMedia.matches) {
+      this.opened = false;
+    }
+  }
 
   toggle() {}
 }

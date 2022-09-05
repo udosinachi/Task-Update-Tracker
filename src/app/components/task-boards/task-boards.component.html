@@ -15,6 +15,7 @@
             <h2>Backlog Task</h2>
             <span matBadge="{{ task1.length }}"> </span>
           </div>
+          <div *ngIf="task1.length === 0">No Task</div>
           <div class="button">
             <app-add-task (onAddTask)="addTask($event)"></app-add-task>
           </div>
@@ -69,6 +70,7 @@
             <h2>To Do Task</h2>
             <span matBadge="{{ task2.length }}"></span>
           </div>
+          <div *ngIf="task2.length === 0">No Task</div>
           <div class="task-boards-cards-sub">
             <div class="card-holder" *ngFor="let card of task2" cdkDrag>
               <div class="card-title">
@@ -120,6 +122,7 @@
             <h2>In Process</h2>
             <span matBadge="{{ task3.length }}"></span>
           </div>
+          <div *ngIf="task3.length === 0">No Task</div>
           <div class="task-boards-cards-sub">
             <div class="card-holder" *ngFor="let card of task3" cdkDrag>
               <div class="card-title">
@@ -170,6 +173,11 @@
           <div class="task-boards-cards-main-title">
             <h2>Done</h2>
             <span matBadge="{{ task4.length }}"></span>
+          </div>
+          <div *ngIf="task4.length === 0" class="warning">
+            <mat-card class="warning-card">
+              <i class="material-icons">warning_amber</i>No Task</mat-card
+            >
           </div>
           <div class="task-boards-cards-sub">
             <div class="card-holder" *ngFor="let card of task4" cdkDrag>

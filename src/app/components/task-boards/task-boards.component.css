@@ -135,3 +135,13 @@ img {
 .cdk-drag-animating {
   transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
+/* .warning {
+  border: 3px solid red;
+} */
+.warning-card {
+  align-items: center;
+  display: flex;
+}
+.warning-card i {
+  margin-right: 30px;
+}
